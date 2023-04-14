@@ -1,0 +1,15 @@
+@{
+  //Fortemente tipada
+  var curso = ViewData["curso"] as Curso; //Converter
+
+}
+
+@for (int i=0;i<2;i++){
+    <div class="card border-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">@curso?.TituloInterno</div>
+  <div class="card-body text-dark">
+    <h5 class="card-title">@curso?.TituloMarketing</h5>
+    <p class="card-text">@curso?.Descricao</p>
+  </div>
+</div>
+}
