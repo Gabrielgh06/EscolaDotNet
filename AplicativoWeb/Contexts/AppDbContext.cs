@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore;
 using AplicativoWeb.Models; //Chamando a camada Modelo
 using AplicativoWeb.EntityConfigs;
-public class AppDbContext:DbContext{
 
     //dbContext representa o banco de dados
-    //dbSet Representa a tabela
+public class AppDbContext:DbContext{
 
+    //dbSet Representa a tabela
     public DbSet<Curso> Cursos => Set<Curso>(); //representa a tabela //Seta (atribui) a classe Curso com a entidade no banco de dados (context) EscolaDotNet
     // public DbSet<Disciplina> Disciplinas => Set<disciplina>();
 
